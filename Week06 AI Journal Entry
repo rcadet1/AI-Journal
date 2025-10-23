@@ -1,0 +1,27 @@
+AI Usage Journal
+Rood Cadet
+rcadet1@umd.edu
+Section 301
+
+Week 6
+This week I used ChatGPT to get unstuck on a small Python script. I was cleaning
+a CSV of player stats and computing slugging percentage. My loop kept throwing
+KeyError and my results didn’t match Excel. I did not ask AI to write the whole
+program. I used it to debug, explain the traceback, and suggest safer patterns.
+
+What I asked for:
+• “Read this error and tell me what line actually failed.”  
+• “Why would pandas say a column doesn’t exist even though I see it?”  
+• “Show me a vectorized way to compute SLG with null/zero at bats handled.”  
+• “Give me a tiny test I can run to verify the math.”
+
+What I changed after the chat:
+1) The CSV had hidden spaces in headers. I added:
+   `df.columns = df.columns.str.strip()`  
+2) Some fields were strings with commas. I converted and filled safely:
+   `num_cols = ["AB","H","2B","3B","HR"]; df[num_cols] = (df[num_cols]
+      .replace({",":""}, regex=True).apply(pd.to_numeric, errors="coerce").fillna(0))`
+3) I replaced the loop with a vectorized formula and divide by zero guard:
+   `tb = df["H"] + df["2B"] + 2*df["3B"] + 3*df["HR"]`
+   `df["SLG"] = np.where(df["AB"]>0, tb/df["AB"], 0.0)`
+4) I added a 3 row unit test snippet and a quick `assert np.isclose()` 
