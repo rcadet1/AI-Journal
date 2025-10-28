@@ -1,0 +1,20 @@
+AI Usage Journal
+Rood Cadet
+rcadet1@umd.edu
+Section 301
+
+Week 7
+This week I used ChatGPT to level up my internship pipeline tracking and follow ups.
+I asked AI to design a simple Google Sheets tracker with columns for company, role,
+deadline, status, last touch, next action, contact, and notes. It gave me formulas
+to auto flag overdue follow ups (=IF(TODAY()>E2,"OVERDUE","")), a dropdown list for
+statuses (Applied, Assessment, Interview, Offer, Rejected), and conditional
+formatting rules so upcoming deadlines turn yellow 3 days before and red on the
+due date. I did not let AI submit anything for me I only used it to structure and
+organize the process. 
+
+I also used ChatGPT to draft 3 outreach templates:alum intro,polite bump
+after no reply, and “thank you + next steps” post coffee. It helped me keep
+messages under 120 words with a clear ask and a one line value add. For each target
+role, I asked AI to map the job description into 4-6 weekly tasks; then I tuned two
+resume bullets to mirror those tasks using my TA and Classroom Support examples.
