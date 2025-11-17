@@ -1,0 +1,21 @@
+AI Usage Journal
+Rood Cadet
+rcadet1@umd.edu
+Section 301
+
+This week I used ChatGPT to build a simple portfolio for my projects. It
+suggested React + Vite + Tailwind and gave me a clean one page layout:
+hero, projects grid, about, and contact. I used a JSON file for project
+data so I can add cards without editing code. I copied the code, edited
+text and styles, and try to pushed it to GitHub. 
+
+AI helped me fix two blockers. First, a GitHub Pages refresh error:
+I set the correct base in vite.config and added the redirect file.
+Second, performance and access: lazy loaded images, added alt text,
+and set a short meta title and description.
+
+What I learned a data file keeps updates simple Pages needs the base
+path set small details alt text, spacing, clear buttons make the site
+feel real. Next steps: add 3 real projects with screenshots, write a
+3 sentence case study for each problem, approach, result, and connect
+a custom domain.
