@@ -1,0 +1,14 @@
+AI Usage Journal
+Rood Cadet
+rcadet1@umd.edu
+Section 301
+
+Week 10 
+This week I used ChatGPT to speed up how I make JPG images for video editing.
+I asked for fast batch commands to convert and size files for Reels, TikTok and
+YouTube. It gave me an ffmpeg one liner that turns mixed PNG, HEIC shots into
+JPG, resizes to 1080×1920 or 1920×1080, sets quality 85, converts color
+to sRGB, strips metadata, and auto names with zero padded numbers so Premiere
+and CapCut sort correctly. I also had it write a short Python script Pillow
+to add a thin border and optional text overlay title and timestamp. I copied
+the code, tested on a sample folder. 
